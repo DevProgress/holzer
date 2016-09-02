@@ -1,0 +1,274 @@
+@font-face {
+font-family: SharpUnity;
+font-style: normal;
+font-weight: 100;
+src: url(../fonts/SharpUnity-Book.ttf) format("truetype"),url(../fonts/SharpUnity-Book.woff) format("woff"),url(../fonts/SharpUnity-Book.woff2) format("woff2");
+}
+
+@font-face {
+font-family: SharpUnity;
+font-style: italic;
+font-weight: 100;
+src: url(../fonts/SharpUnity-BookItalic.ttf) format("truetype"),url(../fonts/SharpUnity-BookItalic.woff) format("woff"),url(../fonts/SharpUnity-BookItalic.woff2) format("woff2");
+}
+
+@font-face {
+font-family: SharpUnity;
+font-style: normal;
+font-weight: 400;
+src: url(../fonts/SharpUnity-Semibold.ttf) format("truetype"),url(../fonts/SharpUnity-Semibold.woff) format("woff"),url(../fonts/SharpUnity-Semibold.woff2) format("woff2");
+}
+
+@font-face {
+font-family: SharpUnity;
+font-style: italic;
+font-weight: 400;
+src: url(../fonts/SharpUnity-SemiboldItalic.ttf) format("truetype"),url(../fonts/SharpUnity-SemiboldItalic.woff) format("woff"),url(../fonts/SharpUnity-SemiboldItalic.woff2) format("woff2");
+}
+
+@font-face {
+font-family: SharpUnity;
+font-style: normal;
+font-weight: 800;
+src: url(../fonts/SharpUnity-Extrabold.ttf) format("truetype"),url(../fonts/SharpUnity-Extrabold.woff) format("woff"),url(../fonts/SharpUnity-Extrabold.woff2) format("woff2");
+}
+
+@font-face {
+font-family: SharpUnity;
+font-style: italic;
+font-weight: 800;
+src: url(../fonts/SharpUnity-ExtraboldItalic.ttf) format("truetype"),url(../fonts/SharpUnity-ExtraboldItalic.woff) format("woff"),url(../fonts/SharpUnity-ExtraboldItalic.woff2) format("woff2");
+}
+
+html, body {
+  background-color: rgb(195, 195, 186);
+  font-family: "SharpUnity";
+  font-weight: 100;
+  overflow-x: hidden;
+}
+
+.map-container {
+  //padding-top: 60px;
+  //padding-bottom: 60px;
+}
+
+.modal-dialog {
+  max-width: 600px;
+}
+
+.modal-dialog {
+  max-width: 600px;
+}
+
+.modal-body h3 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+#col-artwork
+{
+  text-align: center;
+}
+
+h3#historical-artifact-image-title
+{
+  text-align: left;
+}
+
+p#historical-artifact-data
+{
+  text-align: left;
+}
+
+#col-pattern
+{
+  text-align: center;
+}
+
+#historical-artifact-image
+{
+  max-height: 300px;
+  max-width: 100%;
+}
+
+#pattern-image
+{
+  max-height: 300px;
+  max-width: 100%;
+}
+
+/* Styles for middle strip of page just below the splash */
+.middle-gray-bar {
+  background-color: rgb(228, 229, 219);  /* dropper value, native RGB */
+}
+
+.middle-gray-bar .middle-title {
+  font-size: 32px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 15%;
+  font-weight: 800;
+}
+
+@media (max-width: 768px) { /* equivalent to bootstrap min size, without using Less */
+  .middle-gray-bar .middle-title {
+    text-align:left;
+    margin-left: 15px;
+    padding-bottom: 0;
+  }
+}
+
+.middle-gray-bar .middle-button {
+  padding-top: 11px;
+  padding-bottom: 5px;
+}
+
+.middle-gray-bar button {
+  margin-top: 10px;
+}
+.btn {
+  padding-top: 9px;
+  padding-bottom: 9px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+.btn-danger {
+  font-weight: bold;
+  background-color: rgb(209, 44, 43);  /* dropper value, native RGB */
+  border-color: #e4002b;
+}
+
+.btn-danger:hover {
+  background-color: #781818;
+  border-color: #781818;
+}
+
+.btn-circle {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 12px;
+  line-height: 1.428571429;
+  border-radius: 15px;
+}
+
+.btn-circle span.glyphicon
+{
+  margin-left: 4px;
+}
+
+#btn-join
+{
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) { /* equivalent to bootstrap min size, without using Less */
+  .middle-gray-bar .middle-title {
+    text-align: center;
+    margin-left: 0;
+    padding-left: 0;
+  }
+  .middle-button {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .middle-gray-bar button {
+    width: 100%;
+  }
+  .button-container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+#state-title {
+  font-size: 28px;
+  font-weight: 800;
+}
+
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  #close-modal-button { display: block; }  /* show it on small screens */
+}
+
+@media screen and (min-width: 768px){
+  #close-modal-button { display: none; }   /* hide it elsewhere */
+}
+
+#close-button {
+  cursor:pointer;
+  color: rgb(195, 195, 186);
+}
+
+.bottom-gray-bar {
+  font-weight: 400;
+}
+
+.bottom-gray-bar .bottom-title {
+  font-weight: 800;
+}
+
+.bottom-gray-bar .padded-left {
+  padding-left: 15%;
+  padding-right: 5%;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.bottom-gray-bar .padded-right {
+  padding-right: 20%;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.bottom-gray-bar .attribution-title {
+  font-size: 12px;
+}
+
+.bottom-gray-bar .attribution a {
+  font-size: 12px;
+  color: black;
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 0px) and (max-width: 768px) {
+.bottom-gray-bar .padded-left {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.bottom-gray-bar .padded-right {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+/* when modal shows, prevent body from scrolling
+   http://stackoverflow.com/questions/9538868/prevent-body-from-scrolling-when-a-modal-is-opened
+*/
+body.modal-open {
+  overflow: hidden;
+  position: fixed;
+}
+
+/* show a hint about zooming on mobile */
+.mobile-hint-container {
+  text-align: center;
+  background-color: white;
+}
+
+.mobile-hint {
+  display: inline-block;
+  margin: 10px auto 10px auto;
+  padding: 5px;
+  background-color: rgb(241, 241, 241);  /* dropper value, native RGB */
+  font-weight: 400;
+}
+
+.mobile-hint .glyphicon {
+  position: relative;
+  top: 2px;
+
+}
